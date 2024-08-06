@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Day-Guess-Game</h1>
+        <div id="root"></div>
+        <br>
+        <button onclick="abc()">Click me</button>
+    </center>
+    <script>
+        function abc(){
+           
+            let num=Math.floor(Math.random()*7+1)
+            switch(num){
+                case 1:
+                    root.innerHTML='moday'
+                    break;
+                    case 2:
+                    root.innerHTML='Tuesday'
+                    break;
+                    case 3:
+                    root.innerHTML='wednsday'
+                    break;
+                    case 4:
+                    root.innerHTML='Thursday'
+                    break;
+                    case 5:
+                    root.innerHTML='Friday'
+                    break;
+                    case 6:
+                    root.innerHTML='Saturday'
+                    break;
+                    case 7:
+                    root.innerHTML='Sunday'
+                    break;
+
+            }
+        }
+    </script>
+</body>
+</html>
