@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Digital Clock</h1>
+        <br>
+        <h1 id="root"></h1>
+    </center>
+    <script>
+        let div=document.getElementById('root')
+        let sec=0;
+        let minute=0;
+        let hour=0;
+        
+
+        setInterval(()=>{
+            div.innerHTML=`hours:${hour}...minute:${minute}...sec:${sec++}`
+            if(sec==60){
+            minute++
+            sec=0
+            }
+            if(minute==60){
+                hour++
+                minute=0
+            }
+        },1000)
+        
+        
+    </script>
+    
+</body>
+</html>

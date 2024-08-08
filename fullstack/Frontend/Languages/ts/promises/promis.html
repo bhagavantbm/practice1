@@ -1,0 +1,14 @@
+<script>
+    let hey=new Promise((fullfill,notfull)=>{
+        setInterval(()=>{
+            notfull("thank you for full filling")
+        },1000)
+    })
+    hey.then((g)=>{
+        console.log(g)
+    })
+    hey.catch((g)=>{
+        console.log(g)
+    })
+    console.log(hey)
+</script>
