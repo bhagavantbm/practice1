@@ -1,0 +1,7 @@
+<script>
+    async function todo() {
+        let data=fetch('https://jsonplaceholder.typicode.com/todos')
+        console.log(await(await data).json())
+    }
+    todo()
+</script>

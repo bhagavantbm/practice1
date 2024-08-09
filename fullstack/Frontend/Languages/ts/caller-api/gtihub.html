@@ -1,0 +1,8 @@
+<script>
+    async function github() {
+        let data=fetch('https://data.covid19india.org/data.json')
+        console.log(await(await data).json())
+        
+    }
+    github()
+</script>

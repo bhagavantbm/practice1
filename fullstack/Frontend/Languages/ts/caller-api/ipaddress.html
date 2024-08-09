@@ -1,0 +1,7 @@
+<script>
+    async function ip() {
+        let data=fetch('https://api.ipify.org/')
+        console.log(await(await data).json()) 
+    }
+    ip()
+</script>
