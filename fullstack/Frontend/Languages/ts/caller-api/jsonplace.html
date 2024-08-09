@@ -1,0 +1,8 @@
+<script>
+    async function jsonplace() {
+        let data=fetch('https://jsonplaceholder.typicode.com/posts')
+        console.log(await (await data).json())
+        
+    }
+    jsonplace()
+</script>
