@@ -1,0 +1,8 @@
+<script>
+    async function jwellery() {
+        let data=fetch('https://fakestoreapi.com/products/category/jewelery')
+        console.log(await(await data).json())
+      
+    }
+    jwellery()
+</script>

@@ -1,0 +1,9 @@
+<script>
+    async function git() {
+        let data=fetch('https://api.github.com/users')
+        console.log((await (await data).json()));
+        
+        
+    }
+    git()
+</script>

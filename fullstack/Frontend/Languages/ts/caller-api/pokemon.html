@@ -1,0 +1,7 @@
+<script> 
+    async function pokemon() {
+        let data=fetch('https://pokeapi.co/api/v2/pokemon/')
+        console.log(await (await data).json())
+    }
+    pokemon()
+</script>

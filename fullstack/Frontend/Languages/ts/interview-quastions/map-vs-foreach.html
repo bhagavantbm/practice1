@@ -1,0 +1,24 @@
+
+<!-- map() -->
+<script>
+    let  numbers = [1, 2, 3, 4, 5];
+    const doubled = numbers.map(num => num * 2);
+    console.log(doubled); // Output: [2, 4, 6, 8, 10]
+    console.log(numbers); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
+
+</script>
+
+
+
+
+<!-- for-each -->
+ <script>
+    const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((num, index, arr) => {
+  arr[index] = num * 2; 
+});
+
+console.log(numbers); // Output: [2, 4, 6, 8, 10] (original array is modified)
+
+ </script>

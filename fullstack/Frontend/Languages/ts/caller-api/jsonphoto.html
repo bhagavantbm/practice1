@@ -1,0 +1,10 @@
+<script>
+    async function phot() {
+        let data=fetch('https://jsonplaceholder.typicode.com/photos')
+    console.log(await(await data).json())
+        
+    }
+    phot()
+    
+
+</script>

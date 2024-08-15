@@ -1,0 +1,8 @@
+<script>
+    async function jsonc() {
+        let data=fetch('https://jsonplaceholder.typicode.com/comments')
+        console.log(await (await data).json())
+        
+    }
+    jsonc()
+</script>

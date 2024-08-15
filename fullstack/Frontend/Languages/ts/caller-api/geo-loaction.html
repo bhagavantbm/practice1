@@ -1,0 +1,7 @@
+<script>
+    async function locat() {
+        let data=fetch('https://api.bigdatacloud.net/data/reverse-geocode-client')
+        console.log(await(await data).json())
+    }
+    locat()
+</script>
