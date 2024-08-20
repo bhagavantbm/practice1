@@ -8,7 +8,7 @@ import Allroutes from "./roter"
 let App=()=>{
 
   return <div>
-    <Mynavbar/>
+
     <Allroutes/>
   </div>
  
